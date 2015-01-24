@@ -98,7 +98,7 @@ so is up to you to set up more.
 The explanation is easy, when an unicode glyph is needit, for example the
 `\uf17c` character (tux icon in fontawesome) will be checked in the default
 font (Source code pro in our case) and if is not found then will fallback to
-the ones that e have configure (fontwaresome and poweline).
+the ones that we have configure (fontawesome and powerline).
 
 So, install the fonts:
 
@@ -145,22 +145,21 @@ Install Rainbow bash
 
 Install Rainbow bash:
 
-    git clone https://github.com/slok/rainbow-bash.git $HOME/.rainbow-bash
+    $ git clone https://github.com/slok/rainbow-bash.git $HOME/.rainbow-bash
 
 Add this to you `.bashrc`:
 
-RBW_PATH=/home/slok/projects/rainbow-bash
-source $RBW_PATH/init.sh
-
+    RBW_PATH=/home/slok/projects/rainbow-bash
+    source $RBW_PATH/init.sh
 
 Close your terminal session and enter again, lets check if we have rainbow-bash
 colors:
 
-    env |grep RBW_
+    $ env |grep RBW_
 
 Hf you have them, you can use colors like this:
 
-    echo -en "${RBW_R_BLUE}I ${RBW_R_MAGENTA}like ${RBW_L_CYAN}rainbow ${RBW_L_GREEN}bash${RBW_BR_RED}! ${RBW_BR_WHITE}is ${RBW_BR_YELLOW}awesome${RBW_BL_BLUE}!"
+    $ echo -en "${RBW_R_BLUE}I ${RBW_R_MAGENTA}like ${RBW_L_CYAN}rainbow ${RBW_L_GREEN}bash${RBW_BR_RED}! ${RBW_BR_WHITE}is ${RBW_BR_YELLOW}awesome${RBW_BL_BLUE}!"
 
 Set your prompt to the theme you like it in your `.bashrc`
 

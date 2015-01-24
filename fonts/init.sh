@@ -1,0 +1,1 @@
+source $RBW_PATH/fonts/powerline.sh
