@@ -17,7 +17,7 @@ Well... don't be sad, you have... [Rainbow bash]()!
 
 Rainbow bash started as a dynamic color creator to use in a bash prompt easyly
 but i thought, why don't share your bash themes and explain how to put fancy
-glyphs (like font awesome), colors, themes...
+glyphs (like fontawesome), colors, themes...
 
 Do you like powerline bar style?, you can have that prompt! Lets start...
 
@@ -68,7 +68,7 @@ You can use konsole, terminator...
 You are thinking... I love [urxvt](http://software.schmorp.de/pkg/rxvt-unicode.html)!
 You can use urxvt, but it has problems with [fontconfig](http://www.freedesktop.org/wiki/Software/fontconfig/) and we are going to use it in the future, so don't use urxvt please :)
 
-don't be sad, I have the answer if you like urxvt, use the new and promising [termite]()
+don't be sad, I have the answer if you like urxvt, use the new and promising [termite](https://github.com/thestinger/termite)
 
 we are almost ready
 
