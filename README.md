@@ -140,6 +140,9 @@ You should see something like this:
 
 Done!
 
+Install Rainbow bash
+--------------------
+
 Install Rainbow bash:
 
     git clone https://github.com/slok/rainbow-bash.git $HOME/.rainbow-bash
