@@ -194,6 +194,10 @@ Themes
 ![Arrow theme](/snapshots/rbw_arrow.png?raw=true)
 
 
+`RBW_VIDEO`
+
+![Video theme](/snapshots/rbw_video.png?raw=true)
+
 Plugins
 -------
 
