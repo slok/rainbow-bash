@@ -1,4 +1,4 @@
-Rainbo bash!
+Rainbow bash!
 ------------
 
 Do you like grayscale?, yeah right is awesome, but having colos in your
@@ -161,7 +161,7 @@ Hf you have them, you can use colors like this:
 
 Set your prompt to the theme you like it in your `.bashrc`
 
-PS1=$RBW_GIT_ARROW
+    PS1=$RBW_GIT_ARROW
 
 reset your console and we are done.
 
@@ -169,25 +169,28 @@ reset your console and we are done.
 Themes
 ------
 
+`RBW_REGULAR`
+
+![Regular theme](/snapshots/rbw_regular.png?raw=true)
+
+`RBW_HACKER`
+
+![Hacker theme](/snapshots/rbw_hacker.png?raw=true)
+
 `RBW_MINIMAL`
 
 ![Minimal theme](/snapshots/rbw_minimal.png?raw=true)
 
-`RBW_ARROW`
-
-![Arrow theme](/snapshots/rbw_arrow.png?raw=true)
-
-`RBW_REGULAR`
-
-![Regular theme](/snapshots/rbw_regular.png?raw=true)
 
 `RBW_SIMPLE`
 
 ![Simple theme](/snapshots/rbw_simple.png?raw=true)
 
-`RBW_HACKER`
 
-![Hacker theme](/snapshots/rbw_hacker.png?raw=true)
+`RBW_ARROW`
+
+![Arrow theme](/snapshots/rbw_arrow.png?raw=true)
+
 
 Plugins
 -------
