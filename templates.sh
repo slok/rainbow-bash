@@ -1,20 +1,28 @@
-git_prompt() {
-  local GIT
-  if [[ "$git_branch" != "" ]]; then
-      if [[ $git_dirty == *""* ]]; then
-            GIT=$git_branch$GREEN$git_dirty$RED_ON_BLACK""
-      else
-            GIT=$git_branch$RED$git_dirty$RED_ON_BLACK""
-      fi
-  else
-      GIT=""
-  fi
-  echo  -en "$GIT"
-}
+RBW_MINIMAL="\
+\[$RBW_R_BLUE\]\357\201\224\
+\[$RBW_L_BLUE\]\357\201\224\
+\[$RBW_R_CYAN\]\357\201\224\
+\[$RBW_RESET_ALL\] "
 
-RBW_GIT_ARROW="\
+RBW_SIMPLE=" \
+\[$RBW_BR_RED\]\357\204\270  \
+\[$RBW_BR_CYAN\]\W:\
+\[$RBW_RESET_ALL\] "
+
+RBW_HACKER="\
+\[$RBW_BR_GREEN\]\u@\h\
+\$\
+\[$RBW_RESET_ALL\] "
+
+RBW_REGULAR="\
+\[$RBW_BR_GREEN\]\u@\h\
+\[$RBW_RESET_ALL\]:\
+\[$RBW_BR_BLUE\]\W\
+\[$RBW_BR_WHITE\]\$\
+\[$RBW_RESET_ALL\] "
+
+RBW_ARROW="\
 \[$RBW_R_BLACK_ON_WHITE\]\t\[$RBW_R_WHITE_ON_BLACK\]\[$PL_RIGHT_SEPARATOR\]\
 \[$RBW_BR_YELLOW_ON_BLACK\] \u@\h\[$RBW_R_BLACK_ON_BLUE\]\[$PL_RIGHT_SEPARATOR\]\
 \[$RBW_BR_WHITE_ON_BLUE\] \W\[$RBW_RESET_ALL\]\[$RBW_R_BLUE\]\[$PL_RIGHT_SEPARATOR\]\
-\$(git_prompt)\
 \[$RBW_RESET_ALL\] "
