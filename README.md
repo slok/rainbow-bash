@@ -1,5 +1,5 @@
 Rainbow bash!
-------------
+=============
 
 Do you like grayscale?, yeah right is awesome, but having colos in your
 bash is cool.
@@ -19,17 +19,17 @@ Rainbow bash started as a dynamic color creator to use in a bash prompt easyly
 but i thought, why don't share your bash themes and explain how to put fancy
 glyphs (like fontawesome), colors, themes...
 
-Do you like powerline bar style?, you can have that prompt! Lets start...
-
-In a few minutes you will have a prompts like these:
+You want this?
 
 ![rainbow-bash](/snapshots/rainbow-bash.png?raw=true)
+
+Lets start!
 
 DISCLAIMER: I only use GNU/Linux, I haven't tested on Mac
 
 
 First step!! Requirements...
-=============================
+----------------------------
 
 ### UTF on your system!
 
@@ -61,7 +61,7 @@ If not, check your distro manual, for example
 
 
 Second! A terminal unicode complatible
-======================================
+--------------------------------------
 
 You can use konsole, terminator...
 
@@ -74,7 +74,7 @@ we are almost ready
 
 
 Third! put a good teminal font and the glyphs!
-=============================================
+----------------------------------------------
 
 I pass a lot of hours in front of the terminal, I bet you too, we need to put
 a fancy and easy to read font, I personally like [Source code pro](http://adobe-fonts.github.io/source-code-pro/) from Adobe
