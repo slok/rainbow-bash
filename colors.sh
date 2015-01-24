@@ -60,29 +60,29 @@ RBW_WHITE=7 # White
 RBW_BASIC_COLORS=('RBW_BLACK' 'RBW_RED' 'RBW_GREEN' 'RBW_YELLOW' 'RBW_BLUE' 'RBW_MAGENTA' 'RBW_CYAN' 'RBW_WHITE')
 
 #formats
-REGULAR_FMT_VALUE="\\\e[$NOTBOLD;3%um"
+REGULAR_FMT_VALUE="\\\e[$RBW_NOTBOLD;3%um"
 REGULAR_FMT_VARIABLE="RBW_R_%s"
 
-LIGHT_FMT_VALUE="\\\e[$NOTBOLD;9%um"
+LIGHT_FMT_VALUE="\\\e[$RBW_NOTBOLD;9%um"
 LIGHT_FMT_VARIABLE="RBW_L_%s"
 
-BOLD_FMT_VALUE="\\\e[$BOLD;3%um"
+BOLD_FMT_VALUE="\\\e[$RBW_BOLD;3%um"
 BOLD_FMT_VARIABLE="RBW_BR_%s"
 
-BOLD_LIGHT_FMT_VALUE="\\\e[$BOLD;9%um"
+BOLD_LIGHT_FMT_VALUE="\\\e[$RBW_BOLD;9%um"
 BOLD_LIGHT_FMT_VARIABLE="RBW_BL_%s"
 
-BACK_REGULAR_FMT_VALUE="\\\e[$NOTBOLD;3%u;4%um"
+BACK_REGULAR_FMT_VALUE="\\\e[$RBW_NOTBOLD;3%u;4%um"
 BACK_REGULAR_FMT_VARIABLE="RBW_R_%s_ON_%s"
 
-#BACK_LIGHT_FMT_VALUE="\\\e[$NOTBOLD;9%u;4%um"
-#BACK_LIGHT_FMT_VARIABLE="RBW_L_%s_ON_%s"
-#
-#BACK_BOLD_FMT_VALUE="\\\e[$BOLD;3%u;4%um"
-#BACK_BOLD_FMT_VARIABLE="RBW_BR_%s_ON_%s"
-#
-#BACK_NOTBOLD_FMT_VALUE="\\\e[$BOLD;9%u;4%um"
-#BACK_NOTBOLD_FMT_VARIABLE="RBW_BL_%s_ON_%s"
+BACK_LIGHT_FMT_VALUE="\\\e[$RBW_NOTBOLD;9%u;4%um"
+BACK_LIGHT_FMT_VARIABLE="RBW_L_%s_ON_%s"
+
+BACK_BOLD_REGULAR_FMT_VALUE="\\\e[$RBW_BOLD;3%u;4%um"
+BACK_BOLD_REGULAR_FMT_VARIABLE="RBW_BR_%s_ON_%s"
+
+BACK_BOLD_LIGHT_FMT_VALUE="\\\e[$RBW_BOLD;9%u;4%um"
+BACK_BOLD_LIGHT_FMT_VARIABLE="RBW_BL_%s_ON_%s"
 
 # Gets OTHER_SOMETHING and returns SOMETHING
 get_color_name(){
@@ -111,8 +111,6 @@ create_background_color(){
 
     variable_name=$(printf $variable_format `get_color_name $foreground` `get_color_name $background`)
     variable_value=$(printf $value_format ${!foreground} ${!background})
-    echo $variable_name
-    echo $variable_value
     export "${variable_name}"="${variable_value}"
 }
 
@@ -136,8 +134,17 @@ create_colors(){
         # Create background color combinations
         for j in ${RBW_BASIC_COLORS[@]}
         do
-            # Bold light color: RBW_BL_*
+            # Background regular color : RBW_R_*_ON_*
             create_background_color $BACK_REGULAR_FMT_VARIABLE $BACK_REGULAR_FMT_VALUE $j $i
+
+            # Background light color : RBW_L_*_ON_*
+            create_background_color $BACK_LIGHT_FMT_VARIABLE $BACK_LIGHT_FMT_VALUE $j $i
+
+            # Background regular bold color : RBW_BR_*_ON_*
+            create_background_color $BACK_BOLD_REGULAR_FMT_VARIABLE $BACK_BOLD_REGULAR_FMT_VALUE $j $i
+
+            # Background light bold color : RBW_BL_*_ON_*
+            create_background_color $BACK_BOLD_LIGHT_FMT_VARIABLE $BACK_BOLD_LIGHT_FMT_VALUE $j $i
         done
 
     done
@@ -145,7 +152,9 @@ create_colors(){
 
 
 rbw_test_colors(){
-    RBW_VAR_FORMATS=(REGULAR_FMT_VARIABLE LIGHT_FMT_VARIABLE BOLD_FMT_VARIABLE BOLD_LIGHT_FMT_VARIABLE BACK_REGULAR_FMT_VARIABLE)
+    RBW_VAR_FORMATS=(REGULAR_FMT_VARIABLE LIGHT_FMT_VARIABLE BOLD_FMT_VARIABLE
+                     BOLD_LIGHT_FMT_VARIABLE BACK_REGULAR_FMT_VARIABLE BACK_LIGHT_FMT_VARIABLE
+                     BACK_BOLD_REGULAR_FMT_VARIABLE BACK_BOLD_LIGHT_FMT_VARIABLE)
     for fmt in ${RBW_VAR_FORMATS[@]}
     do
         echo
@@ -174,6 +183,5 @@ rbw_test_colors(){
     echo -en $RBW_RESET_ALL
 }
 
+# Let the magic happen
 create_colors
-rbw_test_colors
-
