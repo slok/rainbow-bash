@@ -23,7 +23,7 @@ Do you like powerline bar style?, you can have that prompt! Lets start...
 
 In a few minutes you will have a prompts like these:
 
-[PROMPTS IMAGES]
+![rainbow-bash](/snapshots/rainbow-bash.png?raw=true)
 
 DISCLAIMER: I only use GNU/Linux, I haven't tested on Mac
 
