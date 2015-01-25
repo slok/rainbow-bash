@@ -1,0 +1,4 @@
+RBW_THEME_HACKER="\
+\[$RBW_BR_GREEN\]\u@\h\
+\$\
+\[$RBW_RESET_ALL\] "

@@ -1,9 +1,7 @@
 Rainbow bash!
 =============
 
-Do you like grayscale?, yeah right is awesome, but having colos in your
-bash is cool.
-
+Better bash prompt! you don't need zsh for cool prompts.
 
 **Table of Contents**
 
@@ -182,32 +180,7 @@ reset your console and we are done.
 Themes
 ------
 
-`RBW_REGULAR`
-
-![Regular theme](/snapshots/rbw_regular.png?raw=true)
-
-`RBW_HACKER`
-
-![Hacker theme](/snapshots/rbw_hacker.png?raw=true)
-
-`RBW_MINIMAL`
-
-![Minimal theme](/snapshots/rbw_minimal.png?raw=true)
-
-
-`RBW_SIMPLE`
-
-![Simple theme](/snapshots/rbw_simple.png?raw=true)
-
-
-`RBW_ARROW`
-
-![Arrow theme](/snapshots/rbw_arrow.png?raw=true)
-
-
-`RBW_VIDEO`
-
-![Video theme](/snapshots/rbw_video.png?raw=true)
+[Go to themes](/themes)
 
 Custom themes
 -------------

@@ -1,0 +1,4 @@
+RBW_THEME_SIMPLE=" \
+\[$RBW_BR_RED\]\357\204\270  \
+\[$RBW_BR_CYAN\]\W:\
+\[$RBW_RESET_ALL\] "
