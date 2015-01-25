@@ -32,3 +32,10 @@ RBW_VIDEO="\
   \t \[$RBW_BR_YELLOW\]\u@\h \[$RBW_BR_WHITE\]\w
 \[$RBW_R_MAGENTA\]└\357\201\216\
 \[$RBW_RESET_ALL\] "
+
+RBW_TEST="\
+ \[$RBW_BR_RED\]\357\204\270  \
+\[$RBW_BR_CYAN\]\W:\
+\[$RBW_BR_GREEN\]\$(rbw_position_write_end_of_line \t)
+ \[$RBW_BR_RED\]\357\204\270  \
+\[$RBW_RESET_ALL\] "

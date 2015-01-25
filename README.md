@@ -149,7 +149,7 @@ Install Rainbow bash:
 
 Add this to you `.bashrc`:
 
-    RBW_PATH=/home/slok/projects/rainbow-bash
+    RBW_PATH=$HOME/.rainbow-bash
     source $RBW_PATH/init.sh
 
 Close your terminal session and enter again, lets check if we have rainbow-bash
@@ -198,7 +198,19 @@ Themes
 
 ![Video theme](/snapshots/rbw_video.png?raw=true)
 
+Custom themes
+-------------
+
+You can make custom themes is easy, rainbow bash gives you colors and
+plugins.
+
+Check each plugin folder to check which functions and variables gives you.
+
+[And default themes](/themes)
+
+
 Plugins
 -------
 
-In progress...
+* [Position: Terminal cursor position utils](/plugins/position)
+* [Git: Git utils](/plugins/git)
