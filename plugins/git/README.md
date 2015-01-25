@@ -38,3 +38,5 @@ Variables
 
 Example
 -------
+
+[Check Simple theme](/themes/simple/init.sh)
