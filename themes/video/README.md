@@ -1,7 +1,7 @@
 **Video** rainbow bash theme
 -------------------------
 
-![Video theme](/themes/arrow/snapshot.png?raw=true)
+![Video theme](/themes/video/snapshot.png?raw=true)
 
 Set theme:
 

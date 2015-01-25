@@ -1,29 +1,35 @@
 Themes
-------
+======
 
-`RBW_THEME_REGULAR`
+[Regular](/themes/Regular)
+-----------------
 
 ![Regular theme](/themes/regular/snapshot.png?raw=true)
 
-`RBW_THEME_HACKER`
+[Hacker](/themes/hacker)
+-----------------
 
 ![Hacker theme](/themes/hacker/snapshot.png?raw=true)
 
-`RBW_THEME_MINIMAL`
+[Minimal](/themes/minimal)
+-----------------
 
 ![Minimal theme](/themes/minimal/snapshot.png?raw=true)
 
 
-`RBW_THEME_SIMPLE`
+[Simple](/themes/simple)
+-----------------
 
 ![Simple theme](/themes/simple/snapshot.png?raw=true)
 
 
-`RBW_THEME_ARROW`
+[Arrow](/themes/arrow)
+-----------------
 
 ![Arrow theme](/themes/arrow/snapshot.png?raw=true)
 
 
-`RBW_THEME_VIDEO`
+[Video](/themes/video)
+-----------------
 
 ![Video theme](/themes/video/snapshot.png?raw=true)
