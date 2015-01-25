@@ -4,6 +4,23 @@ Rainbow bash!
 Do you like grayscale?, yeah right is awesome, but having colos in your
 bash is cool.
 
+
+**Table of Contents**
+
+- [Introduction](#introduction)
+- [Preparation](#preparation)
+  - [System locale](#system-locale)
+  - [Unicode terminal](#unicode-terminal)
+  - [Font and glyphs](#font-and-glyphs)
+- [Installation](#installation)
+- [Themes](#themes)
+- [Custom themes](#custom-themes)
+- [Plugins](#plugins)
+
+
+Introduction
+------------
+
 You are thinking... "oh! I want colors", let's google it... some time later you
 reach a conclusion... "Everyone talks about [zsh](http://www.zsh.org/), I'm going to install that thing"
 you install it... you like it, you download [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) or [prezto](https://github.com/sorin-ionescu/prezto), is awesome, but
@@ -23,15 +40,12 @@ You want this?
 
 ![rainbow-bash](/snapshots/rainbow-bash.png?raw=true)
 
-Lets start!
-
 DISCLAIMER: I only use GNU/Linux, I haven't tested on Mac
 
+Preparation
+-----------
 
-First step!! Requirements...
-----------------------------
-
-### UTF on your system!
+### System locale
 
 We are going to use unicode for the glyphs, you can check if your system is
 already configured:
@@ -60,8 +74,7 @@ If not, check your distro manual, for example
 * [Ubuntu](https://help.ubuntu.com/community/Locale)
 
 
-Second! A terminal unicode complatible
---------------------------------------
+### Unicode terminal
 
 You can use konsole, terminator...
 
@@ -73,8 +86,7 @@ don't be sad, I have the answer if you like urxvt, use the new and promising [te
 we are almost ready
 
 
-Third! put a good teminal font and the glyphs!
-----------------------------------------------
+### Font and glyphs
 
 I pass a lot of hours in front of the terminal, I bet you too, we need to put
 a fancy and easy to read font, I personally like [Source code pro](http://adobe-fonts.github.io/source-code-pro/) from Adobe
@@ -138,10 +150,9 @@ You should see something like this:
 
 ![fontawesome on terminal](/snapshots/font-awesome.png?raw=true)
 
-Done!
 
-Install Rainbow bash
---------------------
+Installation
+------------
 
 Install Rainbow bash:
 

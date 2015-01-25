@@ -32,7 +32,7 @@ Variables
 Example
 -------
 
-Write the clock at end of the line (left) in the prompt. You could make the
+Write the clock at end of the line (right) in the prompt. You could make the
 [simple](/themes/simple) theme to show the clock like this:
 
     RBW_MY_CUSTOM_THEME="\
