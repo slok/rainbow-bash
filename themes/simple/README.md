@@ -8,5 +8,6 @@ Set theme:
     PS1=$RBW_THEME_SIMPLE
 
 plugins used:
- **NONE**
+
+* [Git](/plugins/git)
 
