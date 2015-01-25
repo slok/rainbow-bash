@@ -19,24 +19,17 @@ Better bash prompt! you don't need zsh for cool prompts.
 Introduction
 ------------
 
-You are thinking... "oh! I want colors", let's google it... some time later you
-reach a conclusion... "Everyone talks about [zsh](http://www.zsh.org/), I'm going to install that thing"
-you install it... you like it, you download [oh my zsh](https://github.com/robbyrussell/oh-my-zsh) or [prezto](https://github.com/sorin-ionescu/prezto), is awesome, but
-you are unconfortable, you have been so many years with bash, for example the
-tab completion is different, you ssh ina  server and there is bash again,
-and you know int eh inside that you need to go back to bash sadly you think
-"Oh but you have git plugins, youhave nice themes" -.- and you go back to bash
-sad, very sad.
+Do you think this is zsh?
 
-Well... don't be sad, you have... [Rainbow bash]()!
+![rainbow-bash-simple](/themes/simple/snapshot.png?raw=true)
 
-Rainbow bash started as a dynamic color creator to use in a bash prompt easyly
-but i thought, why don't share your bash themes and explain how to put fancy
-glyphs (like fontawesome), colors, themes...
-
-You want this?
+or this?
 
 ![rainbow-bash](/snapshots/rainbow-bash.png?raw=true)
+
+
+Nope! is bash with rainbow bash \o/
+
 
 DISCLAIMER: I only use GNU/Linux, I haven't tested on Mac
 
