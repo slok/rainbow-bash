@@ -14,10 +14,13 @@ rbw_position_get_cursor_position(){
 }
 
 rbw_position_write_end_of_line(){
-    local end_of_line
+    local end_of_line fixed_str
     rbw_position_get_cursor_position
 
-    end_of_line=$((`tput cols`-${#1}))
+    # delete scape characters for count
+    fixed_str=$(echo -en $1 | sed 's/\[[0-9\;]*m//g')
+
+    end_of_line=$((`tput cols`-${#fixed_str}))
     tput sc                   #Save the cursor position&attributes
     tput cup $rbw_position_row $end_of_line
     echo -en $1
