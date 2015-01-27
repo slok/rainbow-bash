@@ -5,6 +5,10 @@ This plugin lets you write easyly on the terminal. For example if you want
 to set the current time at the end of your terminal line in the bash prompt you
 would use this.
 
+Default state:
+-------------
+** Activated **
+
 Dependencies
 -----------
 
@@ -12,11 +16,6 @@ Dependencies
 
 Functions
 ---------
-
-* rbw_position_get_cursor_position
-
-gives you the curent position of the cursor in the terminal. This position is
-stored in `rbw_position_row` and `rbw_position_col`
 
 * rbw_position_write_end_of_line(string)
 
