@@ -191,3 +191,5 @@ Plugins
 
 * [Position: Terminal cursor position utils](/plugins/position)
 * [Git: Git utils](/plugins/git)
+* [System: system common utils](/plugins/system)
+* [strings: string formating utils](/plugins/strings)
