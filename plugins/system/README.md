@@ -14,7 +14,10 @@ Dependencies
 
 Functions
 ---------
- ** None **
+
+ * rbw_system_get_running_jobs
+
+ Returns the number of jobs in background in the current session
 
 Variables
 ---------
