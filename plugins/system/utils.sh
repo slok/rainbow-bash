@@ -6,3 +6,7 @@ rbw_system_set_exit_status(){
         rbw_system_exit_wrong=1
     fi
 }
+
+rbw_system_get_running_jobs(){
+    echo `jobs -l | wc -l`
+}
