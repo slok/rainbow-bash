@@ -1,3 +1,9 @@
+# Includes
+source ${RBW_PLUGINS}/git/init.sh
+source ${RBW_PLUGINS}/system/init.sh
+source ${RBW_PLUGINS}/strings/init.sh
+source ${RBW_PLUGINS}/position/init.sh
+
 
 git_changes=""
 git_commits_to_push=""
@@ -47,7 +53,7 @@ get_git_commits_to_push_fmt(){
 # bulls eye: changes in git
 # alert circle: commit to push
 
-RBW_THEME_MAYDAY="\
+RBW_THEME="\
 \[$RBW_R_BLACK_ON_BLACK\]\$(rbw_strings_fill_line_with_char \" \")\
 \[$RBW_R_WHITE_ON_BLACK\] \u\
 \[$RBW_BR_WHITE_ON_BLACK\]@\H\
@@ -62,3 +68,5 @@ RBW_THEME_MAYDAY="\
 \[$RBW_BR_GREEN_ON_BLACK\]\$(get_running_jobs)\
 \[$RBW_R_WHITE_ON_BLACK\]$\
 \[$RBW_RESET_ALL\] "
+
+PS1=${RBW_THEME}

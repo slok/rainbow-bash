@@ -1,4 +1,7 @@
 
+# Imports
+source ${RBW_PLUGINS}/git/init.sh
+
 # This is a hack for the colors. Colors need to be between \[\],
 # if you return from "get_git_info" \[$RBW_BR_RED\]$rbw_git_branch  then
 # Bash can't interpret those brackets and will cause problems
@@ -23,9 +26,11 @@ get_git_info(){
     fi
 }
 
-RBW_THEME_SIMPLE=" \
+RBW_THEME=" \
 \[$RBW_BR_RED\]\357\204\270  \
 \[$RBW_BR_CYAN\]\W\
  \[\$(get_git_color)\]\$(get_git_info)\
 \[$RBW_BR_CYAN\]:\
 \[$RBW_RESET_ALL\] "
+
+PS1=${RBW_THEME}

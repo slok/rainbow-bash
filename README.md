@@ -151,23 +151,12 @@ Install Rainbow bash:
 
 Add this to you `.bashrc`:
 
+    # Prompt
     RBW_PATH=$HOME/.rainbow-bash
     source $RBW_PATH/init.sh
+    rbw_load_theme simple
 
-Close your terminal session and enter again, lets check if we have rainbow-bash
-colors:
-
-    $ env |grep RBW_
-
-Hf you have them, you can use colors like this:
-
-    $ echo -en "${RBW_R_BLUE}I ${RBW_R_MAGENTA}like ${RBW_L_CYAN}rainbow ${RBW_L_GREEN}bash${RBW_BR_RED}! ${RBW_BR_WHITE}is ${RBW_BR_YELLOW}awesome${RBW_BL_BLUE}!"
-
-Set your prompt to the theme you like it in your `.bashrc`
-
-    PS1=$RBW_GIT_ARROW
-
-reset your console and we are done.
+you can change `rbw_load_theme simple` with any of the described themes
 
 
 Themes

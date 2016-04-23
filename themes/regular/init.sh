@@ -1,6 +1,9 @@
-RBW_THEME_REGULAR="\
+RBW_THEME="\
 \[$RBW_BR_GREEN\]\u@\h\
 \[$RBW_RESET_ALL\]:\
 \[$RBW_BR_BLUE\]\W\
 \[$RBW_BR_WHITE\]\$\
 \[$RBW_RESET_ALL\] "
+
+
+PS1=${RBW_THEME}
