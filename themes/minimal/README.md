@@ -8,5 +8,5 @@ Set theme:
     PS1=$RBW_THEME_MINIMAL
 
 plugins used:
- **NONE**
 
+* [Battery](/plugins/battery)
