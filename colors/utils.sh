@@ -1,3 +1,6 @@
+# Output
+OUTPUT=${RBW_COLORS}/export_colors.sh
+
 # Bolds
 RBW_BOLD=01
 RBW_NOTBOLD=0
@@ -49,6 +52,10 @@ get_color_name(){
     echo ${color[-1]}
 }
 
+save_color(){
+    echo "$1" >> ${OUTPUT}
+}
+
 create_color(){
     local variable_format value_format value_format variable_name value
     variable_format=$1
@@ -57,7 +64,7 @@ create_color(){
 
     variable_name=$(printf $variable_format `get_color_name $value` )
     variable_value=$(printf $value_format ${!value})
-    export "${variable_name}"="${variable_value}"
+    save_color "export ${variable_name}=\"${variable_value}\""
 }
 
 create_background_color(){
@@ -69,10 +76,12 @@ create_background_color(){
 
     variable_name=$(printf $variable_format `get_color_name $foreground` `get_color_name $background`)
     variable_value=$(printf $value_format ${!foreground} ${!background})
-    export "${variable_name}"="${variable_value}"
+    #export "${variable_name}"="${variable_value}"
+    save_color "export ${variable_name}=\"${variable_value}\""
 }
 
 create_colors(){
+    rm -f ${OUTPUT}
     for i in ${RBW_BASIC_COLORS[@]}
     do
         # Dynamic variable color creation
@@ -139,4 +148,12 @@ rbw_test_colors(){
         echo -en $RBW_RESET_ALL
     done
     echo -en $RBW_RESET_ALL
+}
+
+export_colors(){
+    # Create file of colors if doesn't exists
+    if [ ! -f ${OUTPUT} ]; then
+        create_colors
+    fi
+    source ${OUTPUT}
 }
