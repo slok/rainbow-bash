@@ -144,6 +144,8 @@ You should see something like this:
 
 Installation
 ------------
+Note: There's a bashscript that automates the installation of the fonts and rainbow bash [here](https://gist.github.com/elegos/f426eda926f39fab081fe5b390b33544), if you want the manual steps
+instead continue reading.
 
 Install Rainbow bash:
 
