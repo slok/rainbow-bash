@@ -4,14 +4,16 @@ rbw_get_battery_info(){
 }
 
 rbw_battery_set_charging(){
+  rbw_battery_full=0
+  rbw_battery_charging=0
+
   local result
   result=$(echo "$battery_info" | grep state |  awk '{print $2}')
   if [[ "$result" == "charging" ]]; then
     rbw_battery_charging=1
   elif [[ "$result" == "fully-charged" ]]; then
     rbw_battery_full=1
-  else
-    rbw_battery_charging=0
+    
   fi
 }
 

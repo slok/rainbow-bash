@@ -8,11 +8,17 @@ charging_icon=""
 charging_color="$RBW_R_YELLOW"
 
 
+get_charging_icon(){
+    if [[ ${rbw_battery_charging} == 1 ]]; then
+        echo -en "${charging_icon}"
+    else
+        echo -en " "
+    fi
+}
+
 get_battery_icon(){
     if [[ ${rbw_battery_full} == 1 ]]; then
         echo -en "${battery_icon_array[5]}"
-    elif [[ ${rbw_battery_charging} == 1 ]]; then
-        echo -en "${charging_icon}"
     else
         icon_index=$(((rbw_battery_percent/20)))
         echo -en "${battery_icon_array[${icon_index}]}"
@@ -32,7 +38,7 @@ get_battery_color(){
 
 
 RBW_THEME="\
-\[\$(get_battery_color)\] \$(get_battery_icon)  \
+\[\$(get_battery_color)\] \$(get_charging_icon) \$(get_battery_icon)  \
 \[$RBW_R_BLUE\]\357\201\224\
 \[$RBW_L_BLUE\]\357\201\224\
 \[$RBW_R_CYAN\]\357\201\224\
