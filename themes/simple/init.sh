@@ -19,9 +19,9 @@ get_git_color(){
 get_git_info(){
     if [[ $rbw_git_is_repo == 1 ]]; then
         if [[ $rbw_git_dirty == 1 ]]; then
-            echo -en "$rbw_git_branch  "
+            echo -en "   $rbw_git_branch  "
         else
-            echo -en "$rbw_git_branch  "
+            echo -en "   $rbw_git_branch  "
         fi
     fi
 }
