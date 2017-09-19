@@ -10,4 +10,5 @@ Set theme:
 plugins used:
 
 * [Git](/plugins/git)
+* [System](/plugins/system)
 
