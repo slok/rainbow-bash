@@ -105,10 +105,10 @@ the ones that we have configure (fontawesome and powerline).
 
 So, install the fonts:
 
-    wget http://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.2.0.zip
+    wget http://fontawesome.io/assets/font-awesome-4.7.0.zip
     unzip font-awesome-4.2.0.zip
     cp font-awesome-4.2.0/fonts/FontAwesome.otf ~/.fonts/
-    wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -O /home/slok/.fonts/PowerlineSymbols.otf
+    wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf -O $HOME/.fonts/PowerlineSymbols.otf
     fc-cache -f -v
 
 And configure our fallbacks for `source code pro`, for this create a file in:
