@@ -1,6 +1,4 @@
 
-# Imports
-source ${RBW_THEMES}/simple/init.sh
 source ${RBW_PLUGINS}/k8s/init.sh
 
 get_kubernetes_context() {
@@ -8,6 +6,9 @@ get_kubernetes_context() {
         echo -en "  ☸️ $rbw_k8s_kubectl_current_context"
     fi
 }
+
+# Import the last so the job bullet color gets the correct job exit code.
+source ${RBW_THEMES}/simple/init.sh
 
 # To get the code of the unicode character: $ echo  | hexdump
 RBW_THEME=" \
