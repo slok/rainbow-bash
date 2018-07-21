@@ -1,5 +1,4 @@
-**Simple** rainbow bash theme
--------------------------
+## **Simple** rainbow bash theme
 
 ![Simple theme](/themes/simple/snapshot.png?raw=true)
 
@@ -9,6 +8,5 @@ Set theme:
 
 plugins used:
 
-* [Git](/plugins/git)
-* [System](/plugins/system)
-
+- [Git](/plugins/git)
+- [System](/plugins/system)
