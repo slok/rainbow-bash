@@ -8,7 +8,7 @@ This plugin lets you get information about a kubernetes.
 
 ## Dependencies
 
-- `k8s`
+- `kubectl`
 
 ## Functions
 
