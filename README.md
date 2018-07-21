@@ -1,5 +1,4 @@
-Rainbow bash!
-=============
+# Rainbow bash!
 
 Better bash prompt! you don't need zsh for cool prompts.
 
@@ -15,26 +14,21 @@ Better bash prompt! you don't need zsh for cool prompts.
 - [Custom themes](#custom-themes)
 - [Plugins](#plugins)
 
-
-Introduction
-------------
+## Introduction
 
 Do you think this is zsh?
 
-![rainbow-bash-simple](/themes/simple/snapshot.png?raw=true)
+![rainbow-bash-ksimple](/themes/ksimple/snapshot.png?raw=true)
 
 or this?
 
 ![rainbow-bash](/snapshots/rainbow-bash.png?raw=true)
 
-
 Nope! is bash with rainbow bash \o/
-
 
 DISCLAIMER: I only use GNU/Linux, I haven't tested on Mac
 
-Preparation
------------
+## Preparation
 
 ### System locale
 
@@ -58,12 +52,10 @@ already configured:
     LC_IDENTIFICATION=es_ES.UTF-8
     LC_ALL=
 
-
 If not, check your distro manual, for example
 
-* [Arch](https://wiki.archlinux.org/index.php/Locale)
-* [Ubuntu](https://help.ubuntu.com/community/Locale)
-
+- [Arch](https://wiki.archlinux.org/index.php/Locale)
+- [Ubuntu](https://help.ubuntu.com/community/Locale)
 
 ### Unicode terminal
 
@@ -75,7 +67,6 @@ You can use urxvt, but it has problems with [fontconfig](http://www.freedesktop.
 don't be sad, I have the answer if you like urxvt, use the new and promising [termite](https://github.com/thestinger/termite)
 
 we are almost ready
-
 
 ### Font and glyphs
 
@@ -141,9 +132,8 @@ You should see something like this:
 
 ![fontawesome on terminal](/snapshots/font-awesome.png?raw=true)
 
+## Installation
 
-Installation
-------------
 Note: There's a bashscript that automates the installation of the fonts and rainbow bash [here](https://gist.github.com/elegos/f426eda926f39fab081fe5b390b33544), if you want the manual steps
 instead continue reading.
 
@@ -160,14 +150,11 @@ Add this to you `.bashrc`:
 
 you can change `rbw_load_theme simple` with any of the described themes
 
-
-Themes
-------
+## Themes
 
 [Go to themes](/themes)
 
-Custom themes
--------------
+## Custom themes
 
 You can make custom themes is easy, rainbow bash gives you colors and
 plugins.
@@ -176,11 +163,10 @@ Check each plugin folder to check which functions and variables gives you.
 
 [And default themes](/themes)
 
+## Plugins
 
-Plugins
--------
-
-* [Position: Terminal cursor position utils](/plugins/position)
-* [Git: Git utils](/plugins/git)
-* [System: system common utils](/plugins/system)
-* [strings: string formating utils](/plugins/strings)
+- [Position: Terminal cursor position utils](/plugins/position)
+- [Git: Git utils](/plugins/git)
+- [System: system common utils](/plugins/system)
+- [Strings: string formating utils](/plugins/strings)
+- [Kubernetes: Kubernetes utils](/plugins/k8s)
